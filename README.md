@@ -1,2 +1,3 @@
 # Personal-projects
-My personal projects for skill development
+My personal projects for skill development.
+
