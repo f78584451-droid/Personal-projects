@@ -3,7 +3,7 @@
     padding-right: 19px;
     gap: 60px;
     position: relative;
-    top: 35px;
+    top: -4px;
 }
 
  
@@ -46,7 +46,7 @@ body  {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    
 }
 
 /**this is the actual box**/
@@ -57,7 +57,8 @@ body  {
     max-width: 1300px;
     padding: 30px;
     border-radius: 15px;
-    box-shadow: 15px 15px 15px black;
+    box-shadow: 15px 15px 15px ;
+    height: 888px;
 
     display: flex;
     flex-direction: column;
@@ -67,25 +68,76 @@ body  {
 
     position: relative;
     left: -200px;
-    top: 80px;
+    top: -1px;
 
 }
  
 
 /**image styling**/
+/**carousel images**/
 
-.home1 img {
-    width: 100%;
-    max-width: 450px;
-
+.container20 {
+    position: absolute;
+    width: 60vmin;
+    border: 10px solid white;
+    border-radius: 10px;
+    box-shadow: 0px 5px 25px black;
+    overflow: hidden;
+    height: 70%;
+    
 
 }
+
+.img-container {
+    display: flex;
+    width: 400%;
+    animation: slide 16s infinite;
+}
+
+.img-container img {
+    width: 25%;
+}
+
+
+
+@keyframes slide{
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(0);
+    }
+    30%{
+        transform: translateX(-25%);
+    }
+    50%{
+        transform: translateX(-25%);
+    }
+    55%{
+        transform: translateX(-50%);
+    }
+    75%{
+        transform: translateX(-50%);
+    }
+    80%{
+        transform: translateX(-75%);
+    }
+    100%{
+        transform: translateX(-75%);
+    }
+    
+
+}
+
+
+
+
 
 .home2 {
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    margin-top: 20px;
+    gap: 2px;
+    margin-top: 639px;
 }
 
 .home2 h1 {
@@ -117,7 +169,7 @@ body  {
     border-radius: 10px;
     padding: 12px 20px;
     position: relative;
-    top: -5px;
+    top: -13px;
     cursor: pointer;
     transition: 0.3s ease;
     border: none;
@@ -126,7 +178,7 @@ body  {
 /**hover effect**/
 .home1 a button:hover {
     transform: translateY(-3px);
-    box-shadow: 0px 8px 20px rgb(196, 40, 40);
+    box-shadow: 0px 8px 20px rgb(175, 3, 3);
 }
 
 #navbar a button {
