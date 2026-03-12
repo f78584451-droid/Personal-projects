@@ -6,7 +6,7 @@
 }
 
 #navbar  {
-    gap: 60px;
+    gap: px;
     position: relative;
     top: 0px;  
 }
@@ -17,17 +17,6 @@
 }
 
 
-
-.botton-navbar {
-    width: 100%;
-
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
 .nav-link1 {
     display: flex;
     gap: 8px;
@@ -179,7 +168,7 @@ body  {
 /*tablet*/
 @media ( max-width:992px){
     .home1{
-        width: 90%;
+        width: 100%;
     }
     .container20{
         width: 90%;
@@ -294,16 +283,18 @@ body  {
 }
 
 #navbar a button {
-    font-size: clamp(16px, 4vw, 30px);
-    font-weight: 500;
+    font-size: clamp(16px, 4vw, 28px);
+    font-weight: 400;
     color: white;
     background-color:black;
     border-radius: 10px;
-    padding: 12px 20px;
+    padding: 10px;
     position: relative;
+    left: -2vw;
     cursor: pointer;
     transition: 0.3s ease;
     border: none;
+    width: 100%;
 }
 
 
@@ -431,6 +422,19 @@ input::placeholder {
 .c-section nav {
     position: relative;
     max-width: 600px;
+    
+}
+
+#btn {
+    display: none;
+}
+
+@media screen and (max-width:1225px) {
+    #btn {
+        display: block;
+    }
+    
+
     
 }
 
