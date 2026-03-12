@@ -6,20 +6,59 @@
 }
 
 #navbar  {
-    padding-right: 19px;
     gap: 60px;
     position: relative;
-    top: 0px;
-    
+    top: 0px;  
 }
 
-
-
- 
 #logo h1 {
     color: rgb(39, 39, 112);
 
 }
+
+
+
+.botton-navbar {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.nav-link1 {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    list-style: none;
+    
+}
+.nav-link1 a {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+    font-size: clamp(16px, 4.5vw, 30px);
+}
+.nav-link1 a:hover {
+    color: rgb(233, 202, 202);
+}
+
+.logo2 {
+    text-decoration: none;
+    color: white;
+}
+.logo2 h2 {
+    font-size: clamp(16px, 4vw, 25px);
+}
+@media (max-width:600){
+    .nav-link1 a {
+    width: 50%;
+}
+    
+}
+
 
 #navbar a:hover{
     text-decoration: underline;
@@ -41,11 +80,13 @@
     gap: 40px;
     font-size: clamp(16px, 4vw, 30px);
     font-family: 'Times New Roman', Times, serif;
+    
 }
 
 body  {
     background-color:whitesmoke;
     overflow-x: hidden;
+    margin: 0;
 
 }
   
@@ -64,7 +105,7 @@ body  {
 .home1 {
     background-color: white;
     width: 50%;
-    max-width: 1300px;
+    max-width: 4300px;
     padding: 30px;
     border-radius: 15px;
     box-shadow: 15px 15px 15px ;
@@ -89,11 +130,76 @@ body  {
     border-radius: 10px;
     box-shadow: 0px 5px 25px black;
     overflow: hidden;
-    height: 70%;
+    height: 65%;
     margin: auto;
-    
-
 }
+
+@media ( max-width:600px){
+    .home1{
+        width: 90%;
+    }
+    .container20{
+        width: 90%;
+    }
+    .home2 h1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .home2 h2 {
+        align-items: center;
+        text-align: center;
+
+    }
+    
+}
+
+/*mobile*/
+@media ( max-width:600px){
+    .home1{
+        width: 90%;
+    }
+    .container20{
+        width: 90%;
+    }
+    .home2 h1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .home2 h2 {
+        align-items: center;
+        text-align: center;
+
+    }
+    
+}
+/*tablet*/
+@media ( max-width:992px){
+    .home1{
+        width: 90%;
+    }
+    .container20{
+        width: 90%;
+    }
+    .home2 h1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .home2 h2 {
+        align-items: center;
+        text-align: center;
+
+    }
+    
+}
+
+
+
 
 .img-container {
     display: flex;
@@ -147,7 +253,7 @@ body  {
 }
 
 .home2 h1 {
-    font-size:clamp(16px, 4vw, 30px) ;
+    font-size:clamp(1.8rem, 8vw, 3rem) ;
     font-weight: bolder;
     font-family: 'Times New Roman', Times, serif;
     color: black;
@@ -155,7 +261,7 @@ body  {
 }
 
 .home2 h2 {
-    font-size: clamp(13px,3.5vw, 27px);
+    font-size: clamp(1rem,4vw, 1.5rem);
     font-weight: 200;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: black;
@@ -212,7 +318,6 @@ body  {
 
  footer a {
     position: relative;
-    left: 1900px;
     gap: 15px;
     
 
@@ -325,17 +430,10 @@ input::placeholder {
 
 .c-section nav {
     position: relative;
-    left: 800px;
-    width: 100%;
     max-width: 600px;
     
 }
 
-.c-footer {
-    position: relative;
-    top: 130px;
-    
-}
 
 
 
