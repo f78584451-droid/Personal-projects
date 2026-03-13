@@ -31,7 +31,7 @@
     font-size: clamp(16px, 4.5vw, 30px);
 }
 .nav-link1 a:hover {
-    color: rgb(233, 202, 202);
+    color: rgb(99, 99, 161);
 }
 
 .logo2 {
@@ -41,6 +41,17 @@
 .logo2 h2 {
     font-size: clamp(16px, 4vw, 25px);
 }
+.botton-navbar  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    position: relative;
+    left: -3vw;
+}
+
+
 @media (max-width:600){
     .nav-link1 a {
     width: 50%;
@@ -283,14 +294,15 @@ body  {
 }
 
 #navbar a button {
-    font-size: clamp(16px, 4vw, 28px);
+    font-size: clamp(16px, 3.5vw, 28px);
     font-weight: 400;
     color: white;
     background-color:black;
     border-radius: 10px;
-    padding: 10px;
+    padding: 1vw;
     position: relative;
-    left: -2vw;
+    left: -1vw;
+    height: fit-content;
     cursor: pointer;
     transition: 0.3s ease;
     border: none;
@@ -429,7 +441,7 @@ input::placeholder {
     display: none;
 }
 
-@media screen and (max-width:1225px) {
+@media screen and (max-width:1112px) {
     #btn {
         display: block;
     }
