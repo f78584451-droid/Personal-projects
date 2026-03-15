@@ -418,35 +418,22 @@ input::placeholder {
     
 }
 
-#btn {
+.S-TEXT {
     display: none;
 }
 
-@media (max-width:1111px){
 
-/* hide navbar links */
-.navbar-collapse{
-display: !important;
+@media (max-width:1111.11px){
+    .F-TEXT {
+        display: none;
+    }
+    .S-TEXT {
+        display: inline;
+    }
 }
 
-/* show hamburger button */
-.navbar-toggler{
-display:block !important;
-}
 
-}
 
-@media (min-width:1112px){
-
-.navbar-collapse{
-display:flex !important;
-}
-
-.navbar-toggler{
-display:none !important;
-}
-
-}
 
 
 
