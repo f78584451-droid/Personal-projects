@@ -134,26 +134,7 @@ body  {
     margin: auto;
 }
 
-@media ( max-width:600px){
-    .home1{
-        width: 90%;
-    }
-    .container20{
-        width: 90%;
-    }
-    .home2 h1 {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-    .home2 h2 {
-        align-items: center;
-        text-align: center;
 
-    }
-    
-}
 
 /*mobile*/
 @media ( max-width:600px){
@@ -441,13 +422,30 @@ input::placeholder {
     display: none;
 }
 
-@media screen and (max-width:1112px) {
-    #btn {
-        display: block;
-    }
-    
+@media (max-width:1111px){
 
-    
+/* hide navbar links */
+.navbar-collapse{
+display: !important;
+}
+
+/* show hamburger button */
+.navbar-toggler{
+display:block !important;
+}
+
+}
+
+@media (min-width:1112px){
+
+.navbar-collapse{
+display:flex !important;
+}
+
+.navbar-toggler{
+display:none !important;
+}
+
 }
 
 
